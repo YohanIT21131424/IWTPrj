@@ -1,0 +1,29 @@
+
+.rate {
+    float: left;
+    height: 46px;
+    padding-bottom:10px;
+	padding-left:100px;
+	color: #CDD4D3;
+}
+.rate:not(:checked) > input {
+    position:relative;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+	font-size:50px;
+    
+}
+
+.rate > input:checked ~ label {
+    color: #FFF452;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #FFF452;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,

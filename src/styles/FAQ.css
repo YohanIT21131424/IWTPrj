@@ -1,0 +1,47 @@
+body{
+                             
+	background-image: url("../images/devinya13_.jpg");	
+
+    background-color:#383838; ;
+    color:#CFCFCF;
+    margin: 0;
+    padding:0;
+    text-align: center;
+}
+
+
+.dropdown {
+  background-color: #777;
+  color: white;
+  padding: 18px;
+  width: 50%;
+  border-style: outset;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  opacity: 0.8;
+}
+
+.active, .dropdown:hover {
+  background-color: #555;
+}
+
+.dropdownAnswer {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #383838;
+}
+
+p.round2 {
+  border: 2px solid pink;
+  border-radius: 8px;
+  padding: 5px;
+  font-size:30px;
+}
+
+P.sentence{
+  font-size:19px;
+}
+
+

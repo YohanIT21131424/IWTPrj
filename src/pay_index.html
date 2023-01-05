@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+	<title> Payment Details</title>
+	<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--Linking css-->
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel = "stylesheet" href = "styles/pay_styles.css" />
+	<!--Linking js-->
+	<script src="js/Homepage.js"></script>
+
+	<!--Footer icons-->
+
+	<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>hr.new4 {border: 3px solid black;}</style>
+</head>
+
+<body>
+	<h2> Payment Details </h2>
+	<br><br>
+	<div>
+		<form class = "payment" action = "payment.php" method = "post">
+			<div>
+				<i class = "material-icons">person</i>
+				<label for = "fname"> Name: </label>
+				<input type = "text" id = "fname" name = "first_name" placeholder = "First Name" required>
+				<input type = "text" id = "lname" name = "last_name" placeholder = "Last Name" required>
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">card_membership</i>
+				<label for = "uid"> User ID: </label>
+				<input type = "text" id = "uid" name = "user_id" placeholder = "User ID" required>
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">card_membership</i>
+				<label for = "rid"> Reciept ID: </label>
+				<input type = "text" id = "rid" name = "reciept_id" placeholder = "Reciept ID" required>
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">home</i>
+				<label for = "adr"> Address: </label>
+				<input type = "text" id = "adr" name = "street_address" placeholder = "Street Address" required>
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">location_city</i>
+				<label for = "city"> City: </label>
+				<input type = "text" id = "city" name = "city" placeholder = "City" required>
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">place</i>
+				<label for = "province"> State/Province: </label>
+				<input type = "text" id = "province" name = "state_province" placeholder = "State/Province" required>	
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">pin</i>
+				<label for = "zip"> Postal/Zip Code: </label>
+				<input type = "text" id = "zip" name = "zipcode" placeholder = "Postal/Zip Code" required>	
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">phone</i>
+				<label for = "pnumber"> Phone Number: </label>
+				<input type = "text" id = "pnumber" name = "phone" placeholder = "Phone Number" required>
+			</div>
+			<br><br><br><br>
+			<div>
+				<i class = "material-icons">credit_card</i>
+				<label for = "pmethods">Select Payment Method <label>
+				<select name="payment_type" id = "pmethods" required>
+					<option value = "" selected hidden></option>
+					<option value = "credit">Credit Card</option>
+					<option value = "debit">Debit Card</option>
+				</select>
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">person</i>
+				<label for = "cname"> Cardholder's Name: </label>
+				<input type = "text" id = "cname" name = "cardholder_name" placeholder = "Cardholder's Name" required>
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">password</i>
+				<label for = "cnum"> Card Number: </label>
+				<input type = "text" id = "cnum" name = "card_number" placeholder = "XXXX-XXXX-XXXX-XXXX" required>
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">calendar_today</i>
+				<label for = "expdate"> Expiry Date: </label>
+				<input type = "text" id = "expdate" name = "expiry_date" placeholder = "MM / YYYY" required>
+			</div>
+			<br><br>
+			<div>
+				<i class = "material-icons">lock</i>
+				<label for = "cvc"> CVC: </label>
+				<input type = "text" id = "cvc" name = "cvc_number" placeholder = "xxx" required>
+			</div>
+			<br><br>
+			<div>
+				<img src = "images/visacard_logo.jpg" alt = "visacard_logo" class = "visacard">
+				<img src = "images/paypal_logo.jpg" alt = "paypal_logo" class = "paypal">
+				<img src = "images/mastercard_logo.jpg" alt = "mastercard_logo" class = "mastercard">
+			</div>
+			<div id = "paybtn">
+				<button id = "paybtn"> Pay </button>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
